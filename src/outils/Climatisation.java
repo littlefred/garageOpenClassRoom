@@ -32,6 +32,6 @@ public class Climatisation implements Option, Serializable {
      * on redefinie l'affichage de l'option afin d'indiquer les informations souhait�es
      */
     public String toString() {
-        return NAME + " (" + PRIX + "�)";
+        return NAME + " (" + PRIX + "€)";
     }
 }

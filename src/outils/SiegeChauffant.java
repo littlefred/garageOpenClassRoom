@@ -18,7 +18,7 @@ public class SiegeChauffant implements Option, Serializable {
      */
     private static final long serialVersionUID = 1L;
 
-    private final String NAME = "Si�ges Chauffants";
+    private final String NAME = "Sièges Chauffants";
     private final Double PRIX = 562.9;
 
     /**
@@ -32,6 +32,6 @@ public class SiegeChauffant implements Option, Serializable {
      * on redefinie l'affichage de l'option afin d'indiquer les informations souhait�es
      */
     public String toString() {
-        return NAME + " (" + PRIX + "�)";
+        return NAME + " (" + PRIX + "€)";
     }
 }

@@ -50,8 +50,8 @@ public abstract class Vehicule implements Serializable {
         }
         Double prixFinal = prixVehicule + prixOptions; // prix total du v�hicule (inclus options et moteur)
         // mode d'affichage
-        return "=> Voiture " + nomMarque + " : " + nom + " " + moteur + " (" + prixVehicule + "�)" + options
-                + " d'une valeur totale de " + prixFinal + "�";
+        return "=> Voiture " + nomMarque + " : " + nom + " " + moteur + " (" + prixVehicule + "€)" + options
+                + " d'une valeur totale de " + prixFinal + "€";
     }
 
     /**

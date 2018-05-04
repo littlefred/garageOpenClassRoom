@@ -18,7 +18,7 @@ public class VitreElectrique implements Option, Serializable {
      */
     private static final long serialVersionUID = 1L;
 
-    private final String NAME = "Vitres �lectriques";
+    private final String NAME = "Vitres électriques";
     private final Double PRIX = 212.35;
 
     /**
@@ -32,6 +32,6 @@ public class VitreElectrique implements Option, Serializable {
      * on redefinie l'affichage de l'option afin d'indiquer les informations souhait�es
      */
     public String toString() {
-        return NAME + " (" + PRIX + "�)";
+        return NAME + " (" + PRIX + "€)";
     }
 }

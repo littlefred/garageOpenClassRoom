@@ -60,6 +60,12 @@ public class Test {
         d4_2.addOption(new VitreElectrique());
         garage.addVoiture(d4_2);
         
+        Vehicule d4_3 = new D4();
+        d4_3.setMoteur(new MoteurElectrique("150 KW", 13242d));
+        d4_3.addOption(new SiegeChauffant());
+        d4_3.addOption(new BarreDeToit());
+        garage.addVoiture(d4_3);
+        
         System.out.println(garage);
         
     }

@@ -12,7 +12,7 @@ import outils.Moteur;
 import outils.Option;
 
 /**
- * @author Fr�d�rick P.
+ * @author Frédérick P.
  * 
  *         class abstraite de v�hicule qui sert � alimenter le garage. Les diff�rents type de v�hicules h�riteront de
  *         cette class. Cette class implements Serializable afin de pouvoir enregistrer les v�hicules comme des objets
@@ -21,7 +21,7 @@ import outils.Option;
  */
 public abstract class Vehicule implements Serializable {
     /**
-     * attribut pour g�rer les versions de la class car celle_ci est serializable afin de pouvoir sauvegarder les
+     * attribut pour gérer les versions de la class car celle_ci est serializable afin de pouvoir sauvegarder les
      * informations sous forme d'objet
      */
     private static final long serialVersionUID = 1L;
@@ -32,14 +32,14 @@ public abstract class Vehicule implements Serializable {
     private Marque nomMarque;
     private Moteur moteur;
 
-    // constructeur appel� par la class enfant directement et permet ainsi de d�finir les caract�ristiques du v�hicule
+    // constructeur appelé par la class enfant directement et permet ainsi de définir les caractéristiques du véhicule
     protected Vehicule(Double prix, Marque nomMarque) {
         this.prix = prix;
         this.nomMarque = nomMarque;
     }
 
     /**
-     * on redefinie la m�thode d'affichage pour indiquer les informations comme on le souhaite
+     * on redefinie la méthode d'affichage pour indiquer les informations comme on le souhaite
      */
     public String toString() {
         Double prixVehicule = prix + moteur.getPrix(); // prix du v�hicule hors option (prix modele+prix moteur)
